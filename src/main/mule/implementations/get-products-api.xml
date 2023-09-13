@@ -16,7 +16,7 @@ output application/json
   productID: "73657467",
   productName: "China Mule course",
   productProvider: "Udemy",
-  productDescription: "Complete Mule developer course"
+  productDescription: "Complete Mule developer course for begginers"
 }]]></ee:set-payload>
             </ee:message>
         </ee:transform>
