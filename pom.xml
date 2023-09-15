@@ -43,7 +43,9 @@
 								<properties>
 									<env>dev</env>
 									<api.id>18966151</api.id>
-									<server>dev-cli-id-sec-199</server>
+								
+									<server>proba-dev-cli-id-sec</server>
+
 								</properties>
 							</cloudHubDeployment>
 						</configuration>
@@ -97,7 +99,9 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.4.0-20230822</muleVersion>
-						<server>user-passw-199</server>
+
+						<server>probaPasw</server>
+
 						<objectStoreV2>true</objectStoreV2>
 						<properties>
 							<http.port>8081</http.port>
