@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	<servers>
+		<!-- MuleSoft Nexus EE Repository -->
+		<server>
+			<id>MuleRepository</id>
+			<!-- Can be provided by MuleSoft Support -->
+			<username>devoteam.nederland.nexus</username>
+			<password>RpBmJZSm</password>
+		</server>
+		<!-- Customer Exchange Repository -->
+		<server>
+			<id>anypoint-exchange-v3</id>
+			<username>~~~Client~~~</username>
+			<!-- Devoteam UK 'exchange-access' Connected App-->
+			<password>24de31e5488b48a2a50d40bf6deb60d1~?~Ac280212B584465ea7ee09585B7ba9Be</password>
+		</server>
+		
+		<server>
+			<id>92ff1759-62f4-49af-885c-660f64782a3c</id>
+			<username>~~~Client~~~</username>
+			<!-- Devoteam UK 'exchange-access' Connected App-->
+			<password>19457bfb5e2f42f6b24fa1e5546f1472~?~1b981382Df2949158ADc9D52A3DCB405</password>
+		</server>
+					
+		<server>
+			<id>abc-nexus-repo</id>
+			<username>admin</username>
+			<password>trastapulti</password>
+		</server>	
+
+        <server>
+          <id>practice199</id>
+          <username>Stevo2306</username>
+          <password>Stevo2306</password>
+        </server>
+		
+	</servers>
+
+	<profiles>
+		<profile>
+			<id>Mule</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<repositories>
+				<repository>
+					<id>MuleRepository</id>
+					<name>MuleRepository</name>
+					<url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
+					<layout>default</layout>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+    					<repository>
+      				<id>Repository</id>
+      				<name>Corporate Repository</name>
+      				<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/92ff1759-62f4-49af-885c-660f64782a3c/maven</url>
+      				<layout>default</layout>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+    				</repository>
+			</repositories>
+		</profile>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<username>Stevo2306</username>
+				<password>Stevo2306</password>
+				<anypoint.platform.client_id>013b3c2b892f46c2b11e40a520ecaf38</anypoint.platform.client_id>
+				<anypoint.platform.client_secret>15812d9a646E4904a783c94FDa6A9C08</anypoint.platform.client_secret>
+			</properties>
+		</profile>
+		<profile>
+			<id>test</id>
+			<properties>
+				<username>Stevo2306</username>
+				<password>Stevo2306</password>
+				<anypoint.platform.client_id>52dd8c3143054aa0a796823baa123d2b</anypoint.platform.client_id>
+				<anypoint.platform.client_secret>4E99b881E89546D399490A550F480950</anypoint.platform.client_secret>
+			</properties>
+		</profile>			
+	</profiles>		
+</settings>
