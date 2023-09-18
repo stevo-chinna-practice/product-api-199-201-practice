@@ -43,9 +43,8 @@
 								<properties>
 									<env>dev</env>
 									<api.id>18966151</api.id>
-								
-									<server>proba-dev-cli-id-sec</server>
-
+									<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
+									<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
 								</properties>
 							</cloudHubDeployment>
 						</configuration>
@@ -99,8 +98,8 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.4.0-20230822</muleVersion>
-
-						<server>probaPasw</server>
+						
+						<server>199-deploy-using-maven</server>
 
 						<objectStoreV2>true</objectStoreV2>
 						<properties>
