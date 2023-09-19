@@ -14,7 +14,7 @@ output application/json
 ---
 {
   productID: "73657467",
-  productName: "China muleSoft 4.X course",
+  productName: "China mulesoft change clean deploy 4.x course, added username, password, id and secret in Jenkins exercise 205",
   productProvider: "Udemy",
   productDescription: "Complete Mule developer course indepth"
 }]]></ee:set-payload>

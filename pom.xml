@@ -99,7 +99,7 @@
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.4.0-20230822</muleVersion>
 						<username>${username}</username>
-						<password>${password}</password>
+          				<password>${password}</password>
 						<objectStoreV2>true</objectStoreV2>
 						<properties>
 							<http.port>8081</http.port>
